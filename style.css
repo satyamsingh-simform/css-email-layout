@@ -10,16 +10,18 @@
     width: 100vw;
     background-color: aquamarine;
     display: grid;
-    grid-template-columns: 2.5fr 12fr 1fr;
+    grid-template-columns: 3fr 14fr 0.8fr;
     grid-template-rows: 1fr 11fr;
 }
 body{
     font-family: sans-serif;
+    background-color: white;
 }
 
 .head{
     grid-column: 1/-1;
     background-color: white;
+    border-bottom: 1px solid rgb(228, 223, 223);
 }
 .header-nav{
     /* background-color: red; */
@@ -53,7 +55,7 @@ input{
     width:50rem;
     margin-left: 60px;
     border: none;
-    background-color: rgb(230, 226, 226);
+    background-color: rgb(240, 239, 239);
     border-radius: 5px;
     font-size: 16px;
 }
@@ -96,6 +98,7 @@ a{
     border: none;
     box-shadow: 1px 1px 5px;
     /* border: 2px solid; */
+    margin-top: 10px;
 }
 .aside-btn{
     /* background-color: red; */
@@ -126,9 +129,219 @@ a{
 }
 
 p{
-    padding-left: 20px;
+    margin-left: 20px;
     font-weight: bold;
 }
 .sign{
-    /* background-color: rgb(81, 126, 221); */
+    margin-left: 20px;
+    background-color: rgb(0, 132, 255);
+    margin-top: 15px;
+    padding: 10px 100px;
+    color: white;
+    border: none;
+    font-size: 1rem;
+}
+
+.aside-right{
+    grid-column: 3/-1;
+    background-color: white;
+    border-left: 1px solid rgb(221, 218, 218);
+}
+
+.main{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: white;
+    display: grid;
+    grid-template-rows:1.3fr 2.5fr 15fr;
+    /* grid-template-columns: 1fr 15fr; */
+}
+.main-header{
+    grid-column: 1/-1;
+    background-color: white;
+    border-bottom: 1px solid rgb(228, 223, 223);
+    display: flex;
+    justify-content: space-between;
+}
+.main-nav-left{
+    /* background-color: aqua; */
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 10px; */
+
+}
+.main-div{
+    display: flex;
+    gap: 20px;
+}
+.main-btn{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+}
+.main-nav-right{
+    /* background-color: aqua; */
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 10px; */
+
+}
+.para{
+    color: rgb(141, 138, 138);
+    font-weight: 500;
+}
+
+
+.sec-head{
+    grid-column: 1/-1;
+    grid-column: 2/-1;
+    background-color: white;
+    margin-left: 100px;
+    /* display: grid;
+    grid-template-rows: 1fr 1fr; */
+}
+#saty1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+#saty2{
+    display: flex;
+    justify-content: space-between;
+}
+#reci{
+    height: 50px;
+    width: 50px;
+    background-color: antiquewhite;
+    display: inline-block;
+    border-radius: 50%;
+}
+.satya21{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+}
+.satya22{
+    /* background-color: red; */
+    /* width: 400px; */
+    gap: 7px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: gray;
+    font-weight: 500;
+}
+#ent{
+    font-weight: bold;
+}
+.me{
+    margin-top: -11px;
+}
+.para1-btn{
+    height: 30px;
+    width: 30px;
+    border: none;
+    border-radius: 50%;
+
+    /* margin-left: 100px; */
+}
+
+.body{
+    background-color: rgb(240, 239, 239);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 100px;
+    margin-right: 40px;
+}
+.box1{
+    height: 90%;
+    width: 50%;
+    background-color: white;
+}
+.box2{
+    height:40rem ;
+    width: 40rem;
+    position: absolute;
+    right: -25px;
+    bottom: 0;
+    background-color: white;
+    box-shadow: 1px 1px 5px;
+    /* border-radius: 15px; */
+}
+.top-btn{
+    height: 30px;
+    width: 30px;
+    background-color: rgb(46, 45, 45);
+    color: white;
+    border: none;
+}
+.div-top{
+    padding: 10px;
+    background-color: rgb(46, 45, 45);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-para{
+    color: white;
+}
+
+.recipients{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+}
+.subject{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+}
+.sub-body{
+    padding: 10px;
+}
+.bottom-btn{
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+
+}
+.div-bottom{
+    display: flex;
+    justify-content:space-between;
+    align-items: center; 
+    /* background-color: red; */
+    height: 60px;
+    margin-top: 400px;
+    /* padding: 35px; */
+ 
+}
+.send{
+    width: 100px;
+    margin-left: 35px;
+    background-color: rgb(0, 132, 255);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-btn{
+    height: 100%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
