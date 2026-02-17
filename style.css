@@ -10,8 +10,11 @@
     width: 100vw;
     background-color: aquamarine;
     display: grid;
-    grid-template-columns: 3fr 12fr 1fr;
+    grid-template-columns: 2.5fr 12fr 1fr;
     grid-template-rows: 1fr 11fr;
+}
+body{
+    font-family: sans-serif;
 }
 
 .head{
@@ -59,10 +62,73 @@ a{
     text-decoration: none;
     font-size: 20px;
 }
-button{
+.head-btn{
     height: 50px;
     width: 50px;
     border-radius: 50%;
     background-color: white;
 }
 
+
+.aside-left{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.aside-left-nav-top{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* align-self: start; */
+    align-items: start;
+    /* padding-left: 10px; */
+    padding-right: 10px;
+    /* background-color: red; */
+}
+.compose{
+    padding: 25px 50px;
+    border-radius: 30px;
+    font-size: 1rem;
+    color: rgb(63, 60, 60);
+    margin-left: 10px;
+    background-color: white;
+    border: none;
+    box-shadow: 1px 1px 5px;
+    /* border: 2px solid; */
+}
+.aside-btn{
+    /* background-color: red; */
+    width: 100%;
+    text-align: start;
+    padding: 7px 0;
+    padding-left: 50px;
+    /* font-weight:; */
+    font-size: 15px;
+    border: none;
+    background-color: white;
+}
+.aside-btn:hover{
+    background-color: rgb(226, 186, 186);
+    border-top-right-radius: 10px;
+    color: red;
+}
+
+.aside-left-nav-bottom{
+     display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* align-self: start; */
+    align-items: start;
+    /* padding-left: 10px; */
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+p{
+    padding-left: 20px;
+    font-weight: bold;
+}
+.sign{
+    /* background-color: rgb(81, 126, 221); */
+}
