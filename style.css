@@ -54,7 +54,7 @@ body{
 }
 .search-box{
     /* padding: 12px; */
-    padding: 10px 0;
+    padding: 18px 0;
     padding-left: 20px;
     width:50rem;
     margin-left: 99px;
@@ -194,15 +194,36 @@ p{
     grid-column: 3/-1;
     background-color: white;
     border-left: 1px solid rgb(221, 218, 218);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
 }
-
+.aside-right-nav1{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 20px;
+}
+.aside-right-nav2{
+    display: flex;
+    margin-top: 100px;
+}
+.btn-right{
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    color: gray;
+    /* border: none; */
+    border-radius: 50%;
+}
 .main{
     grid-column: 2/3;
     grid-row: 2/3;
     background-color: white;
     display: grid;
     grid-template-rows:1.3fr 2.5fr 15fr;
-    /* grid-template-columns: 1fr 15fr; */
+    grid-template-columns: 1fr 15fr;
 }
 .main-header{
     grid-column: 1/-1;
@@ -211,20 +232,44 @@ p{
     display: flex;
     justify-content: space-between;
 }
+.section-aside{
+    grid-row: 2/-1;
+    grid-column: 1/2;
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.reci-pro{
+    height: 60px;
+    width: 60px;
+    background-color: rgb(241, 240, 239);
+    border-radius: 50%;
+    margin-top: 57px;
+}
+.pro{
+    position: relative;
+    top: 19px;
+    left: 18px;
+    color: gray;
+}
 .sec-head{
-    grid-column: 1/-1;
-    /* grid-column: 2/-1; */
+    /* grid-column: 1/-1; */
+    grid-column: 2/-1;
     background-color: white;
-    margin-left: 100px;
+    margin-left: 0;
+    position: relative;
+    left: -70px;
 }
 .body{
-    /* grid-column: 2/-1; */
+    grid-column: 2/-1;
     background-color: rgb(240, 239, 239);
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-left: 100px;
+    left: -70px;
+    /* margin-left: 100px; */
     margin-right: 40px;
 }
 .main-nav-left{
@@ -278,7 +323,22 @@ p{
     margin-bottom: 20px;
     font-size: 1.3rem;
 }
-
+.sub-icon{
+    position: relative;
+    top: 5px;
+    color: gray;
+    padding: 0 3px;
+    margin: 0 10px;
+}
+.sub-input{
+    padding: 1px;
+    border: none;
+    color: rgb(61, 60, 60);
+}
+.cross{
+    /* color: black; */
+    font-weight: bold;
+}
 #saty2{
     display: flex;
     justify-content: space-between;
@@ -294,6 +354,10 @@ p{
     background-color: aqua;
     display: flex;
     align-items: center;
+}
+.bg-light{
+    color: gray;
+    font-weight: 600;
 }
 .satya22{
     /* background-color: red; */
@@ -316,6 +380,9 @@ p{
     width: 30px;
     border: none;
     border-radius: 50%;
+    background-color: white;
+    color: gray;
+    margin-left: 10px;
 
     /* margin-left: 100px; */
 }
@@ -382,7 +449,12 @@ p{
     width: 40px;
     border: none;
     border-radius: 50%;
-
+}
+.act{
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    color: gray;
 }
 .div-bottom{
     display: flex;
